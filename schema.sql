@@ -1,0 +1,4 @@
+CREATE DATABASE IF NOT EXISTS student_task_tracker; USE student_task_tracker;
+CREATE TABLE users (user_id INT AUTO_INCREMENT PRIMARY KEY, full_name VARCHAR(100) NOT NULL, email VARCHAR(120) NOT NULL UNIQUE, password_hash VARCHAR(255) NOT NULL, role ENUM('student','admin') NOT NULL DEFAULT 'student', created_at DATETIME DEFAULT CURRENT_TIMESTAMP);
+CREATE TABLE subjects (subject_id INT AUTO_INCREMENT PRIMARY KEY, user_id INT NOT NULL, subject_name VARCHAR(100) NOT NULL, subject_code VARCHAR(20), FOREIGN KEY (user_id) REFERENCES users(user_id));
+CREATE TABLE tasks (task_id INT AUTO_INCREMENT PRIMARY KEY, subject_id INT NOT NULL, task_title VARCHAR(150) NOT NULL, description TEXT, due_date DATE, status ENUM('Pending','In Progress','Completed') NOT NULL DEFAULT 'Pending', created_at DATETIME DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY (subject_id) REFERENCES subjects(subject_id));
