@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StudyTrack Tasks</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <strong>StudyTrack</strong>
+    <nav>
+      <a href="list.html">Tasks</a>
+      <a href="form.html">Add Task</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div>
+        <small>MY SCHOOL WORK</small>
+        <h1>Tasks</h1>
+        <p>Track activities and deadlines in one place.</p>
+      </div>
+      <a class="button" href="form.html">+ Add Task</a>
+    </section>
+
+    <section class="summary">
+      <article>
+        All Tasks
+        <b>5</b>
+      </article>
+
+      <article>
+        In Progress
+        <b>2</b>
+      </article>
+
+      <article>
+        Completed
+        <b>1</b>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>Task List</h2>
+
+      <label for="search">Search</label>
+      <input
+        id="search"
+        type="search"
+        placeholder="Search tasks (visual only)"
+      >
+
+      <table>
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Subject</th>
+            <th>Due</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td data-label="Task">Week 14 Design Package</td>
+            <td data-label="Subject">Web Systems and Technologies</td>
+            <td data-label="Due">Nov 30, 2026</td>
+            <td data-label="Status">
+              <span class="doing">In Progress</span>
+            </td>
+            <td data-label="Actions">
+              <a href="form.html">Edit</a>
+              <button>Delete</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td data-label="Task">Responsive List Page</td>
+            <td data-label="Subject">Web Systems and Technologies</td>
+            <td data-label="Due">Dec 2, 2026</td>
+            <td data-label="Status">
+              <span class="pending">Pending</span>
+            </td>
+            <td data-label="Actions">
+              <a href="form.html">Edit</a>
+              <button>Delete</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td data-label="Task">ERD Review</td>
+            <td data-label="Subject">Database Management</td>
+            <td data-label="Due">Dec 3, 2026</td>
+            <td data-label="Status">
+              <span class="pending">Pending</span>
+            </td>
+            <td data-label="Actions">
+              <a href="form.html">Edit</a>
+              <button>Delete</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td data-label="Task">Prototype Evaluation</td>
+            <td data-label="Subject">Human Computer Interaction</td>
+            <td data-label="Due">Dec 5, 2026</td>
+            <td data-label="Status">
+              <span class="doing">In Progress</span>
+            </td>
+            <td data-label="Actions">
+              <a href="form.html">Edit</a>
+              <button>Delete</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td data-label="Task">SQL Practice</td>
+            <td data-label="Subject">Database Management</td>
+            <td data-label="Due">Dec 7, 2026</td>
+            <td data-label="Status">
+              <span class="done">Completed</span>
+            </td>
+            <td data-label="Actions">
+              <a href="form.html">Edit</a>
+              <button>Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="empty">
+        No tasks yet. Add your first one.
+      </p>
+    </section>
+
+    <p class="note">
+      Static mockup: buttons/search are not functional yet.
+    </p>
+  </main>
+
+</body>
+</html>

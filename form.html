@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Add Task</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <strong>StudyTrack</strong>
+    <nav>
+      <a href="list.html">Tasks</a>
+      <a href="form.html">Add Task</a>
+    </nav>
+  </header>
+
+  <main class="formpage">
+    <a href="list.html">← Back to tasks</a>
+
+    <section class="card">
+      <small>TASK DETAILS</small>
+      <h1>Add a Task</h1>
+      <p>Enter your school activity details.</p>
+
+      <form action="#" method="post">
+
+        <label for="subject_id">Subject *</label>
+        <select id="subject_id" name="subject_id" required>
+          <option value="">Choose a subject</option>
+          <option value="1">Web Systems and Technologies</option>
+          <option value="2">Database Management</option>
+          <option value="3">Human Computer Interaction</option>
+        </select>
+
+        <label for="task_title">Task title *</label>
+        <input
+          id="task_title"
+          name="task_title"
+          type="text"
+          maxlength="150"
+          required
+          placeholder="Task title"
+        >
+
+        <label for="description">Description</label>
+        <textarea
+          id="description"
+          name="description"
+          rows="4"
+          placeholder="Details or instructions"
+        ></textarea>
+
+        <label for="due_date">Due date</label>
+        <input
+          id="due_date"
+          name="due_date"
+          type="date"
+        >
+
+        <label for="status">Status *</label>
+        <select id="status" name="status" required>
+          <option>Pending</option>
+          <option>In Progress</option>
+          <option>Completed</option>
+        </select>
+
+        <p class="error">
+          Example error: Please enter a task title.
+        </p>
+
+        <div class="actions">
+          <button class="button" type="submit">Save Task</button>
+          <a class="button secondary" href="list.html">Cancel</a>
+        </div>
+
+      </form>
+    </section>
+
+    <p class="note">
+      Static form only; it does not save to MySQL yet.
+    </p>
+  </main>
+
+</body>
+</html>
