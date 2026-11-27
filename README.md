@@ -1,6 +1,7 @@
 # Student Task Tracker
 
-**Name:** Pia A. San Esteban
+**Member:** Pia A. San Esteban
+            Danica A. Talaran
 
 ## How to Run
 
